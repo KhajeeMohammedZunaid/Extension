@@ -1,0 +1,1 @@
+import{j as o}from"../popup.js";function i({variant:i="neutral",colorOverride:n,iconLeft:r,iconRight:c,children:e,className:t}){const a=["chip",n?"":`chip--${i}`,!e?"chip--icon-only":"",t??""].filter(Boolean).join(" "),l=n?{backgroundColor:n.bg,color:n.text}:void 0;return o.jsxs("span",{className:a,style:l,children:[r,e,c]})}export{i as C};

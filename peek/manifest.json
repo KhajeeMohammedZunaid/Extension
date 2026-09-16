@@ -1,0 +1,36 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "32": "icons/icon32.png",
+         "48": "icons/icon48.png"
+      },
+      "default_popup": "index.html"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Extract assets, colors, typography & tokens from any site. Export to CSS, SCSS, Tailwind & more. The ultimate dev & design toolkit.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqd8mkdY8qf64zNfDPc+IASjwlDyuYUyob3OL1lNYKQO/C0XUGPnwD1PZLF4Twq+EcvWJUVrz3GgxHw02e5NXnu6VjLGdhTx5QQ/mpeJ7Fn1lrNp7gEOO+Rb2dIECc3oACqom6sLfYiaJqSXasOI8ud9Q7AeTUuM28e5bR5rpxtzwUBllemZeS/bnrvOACn6Soxnilcn29bje90U2Q4KDHg+frVhU9yO1sCY9hiWzb8NDsVyaN4/Gju2KSpMe+QSfpuCqY9RYFJRD3qy7BFVQS/YL11XOa7R4RR4cXGtrZHFEfFxkMcI815NNJ6BH/Akcp4+yjRv4ThkmkJExChoEnQIDAQAB",
+   "manifest_version": 3,
+   "name": "Peek - Design & Asset Toolkit",
+   "permissions": [ "activeTab", "scripting", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.8.10.1",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "icons/*" ]
+   } ]
+}

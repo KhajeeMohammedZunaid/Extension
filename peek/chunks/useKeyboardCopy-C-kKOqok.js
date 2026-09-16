@@ -1,0 +1,1 @@
+import{r as e}from"../popup.js";function t(t,n,r=!0){e.useEffect(()=>{if(!r||!n)return;const e=t.current;if(!e)return;const o=e=>{if(!e.metaKey&&!e.ctrlKey||"c"!==e.key)return;const t=window.getSelection()?.toString();t&&t.length>0||(e.preventDefault(),n())};return e.addEventListener("keydown",o),()=>e.removeEventListener("keydown",o)},[t,n,r])}export{t as u};
