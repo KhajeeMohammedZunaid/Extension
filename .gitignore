@@ -1,0 +1,3 @@
+node_modules/
+*.bak.js
+.DS_Store
