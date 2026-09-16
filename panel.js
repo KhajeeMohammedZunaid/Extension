@@ -373,6 +373,8 @@
     if (type === 'all-img-urls') return exportAllImgUrls(data.assets);
     return '';
   }
+  window.exportByType = exportByType;
+  window.__prismExport__ = exportByType;
 
   /* ══════════════════════════════════════════════════════════════════
      SVG EXPORT HELPERS
@@ -1435,6 +1437,7 @@
       return '';
     }
     window.__prismExport__ = exportByType;
+    window.exportByType = exportByType;
 
     function updateDockBtnState(active) {
       const sr = getMesurerSR();
